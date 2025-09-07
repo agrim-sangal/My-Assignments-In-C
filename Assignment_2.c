@@ -1,10 +1,12 @@
 #include<stdio.h>
 #include<math.h>
 int main(void){
+	// Question 1
 	double a,b,c,D,q,o;
 	printf("Input a no.:");
 	scanf("%lf", &o);
 	printf("These are some values related to %lf:\ncos(%lf):%lf\n sin(%lf):%lf\n log(%lf):%lf\n sqrt(%lf):%lf\n %.2lf raised to 4:%lf\n",o,o,cos(o),o,sin(o),o,log(o),o,sqrt(o),o,pow(o,4));
+	// Question 2
 	printf("Enter value of a , b and c with signs:\n");
 	scanf("%lf%lf%lf", &a, &b, &c);
 	D=b*b-4*a*c;
@@ -15,6 +17,7 @@ int main(void){
 	else{
 		printf("D is negative, roots are imaginary\n");
 	}
+	// Question 4
 	printf("\tLet's use assignment operators\n Enter a no.:");
 	double x;
 	scanf("%lf", &x);
@@ -29,18 +32,19 @@ int main(void){
 	int w=23;
 	w %= 4;
 	printf("This is remainder 23/4: %d\n",w); // This gives the remainder
+	// Question 8
 	printf(" Size of int is: %zu bytes\n Size of float is: %zu bytes \n Size of double is: %zu bytes\n Size of long int: %zu bytes\n Size of char: %zu bytes \n", sizeof(int),sizeof(float),sizeof(double),sizeof(long int),sizeof(char));
+	// Question 9
 	int a1 = 78;
 	float a2 = 90;
 	printf("This is 78/90:%lf \n",(double)a1/a2);
+	// Question 5
 	int a3 = 45;
-	int a4 = 87.8, temp;
-/*	printf("These are the two no.s: %d and %d",a3,a4);
+	int a4 = 87 , temp;
+	printf("These are the two no.s: %d and %d\n",a3,a4);
 	temp = a3;
-	a4 = a3;
+	a3 = a4;
 	a4 = temp;
-	printf("These are the interchanged values:%d and %d",a3,a4);
-	*/
-	
+	printf("These are the interchanged values:%d and %d\n",a3,a4);
 	return 0;
 }		
