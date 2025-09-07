@@ -10,7 +10,7 @@ int main(void){
 	D=b*b-4*a*c;
 	q=sqrt(D); // you can also use q = pow(D,1.0/2) or pow(D,0.5)
 	if(D>=0){
-		printf("Your roots are:%lf and %lf", (-b-q)/2*a, (-b+q)/2*a);
+		printf("Your roots are:%lf and %lf \n", (-b-q)/2*a, (-b+q)/2*a);
 	}
 	else{
 		printf("D is negative, roots are imaginary\n");
@@ -32,6 +32,15 @@ int main(void){
 	printf(" Size of int is: %zu bytes\n Size of float is: %zu bytes \n Size of double is: %zu bytes\n Size of long int: %zu bytes\n Size of char: %zu bytes \n", sizeof(int),sizeof(float),sizeof(double),sizeof(long int),sizeof(char));
 	int a1 = 78;
 	float a2 = 90;
-	printf("This is 78/90:%lf",(double)a1/a2);
+	printf("This is 78/90:%lf \n",(double)a1/a2);
+	int a3 = 45;
+	int a4 = 87.8, temp;
+/*	printf("These are the two no.s: %d and %d",a3,a4);
+	temp = a3;
+	a4 = a3;
+	a4 = temp;
+	printf("These are the interchanged values:%d and %d",a3,a4);
+	*/
+	
 	return 0;
 }		
