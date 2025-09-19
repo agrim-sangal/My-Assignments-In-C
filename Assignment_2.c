@@ -32,12 +32,6 @@ int main(void){
 	int w=23;
 	w %= 4;
 	printf("This is remainder 23/4: %d\n",w); // This gives the remainder
-	// Question 8
-	printf(" Size of int is: %zu bytes\n Size of float is: %zu bytes \n Size of double is: %zu bytes\n Size of long int: %zu bytes\n Size of char: %zu bytes \n", sizeof(int),sizeof(float),sizeof(double),sizeof(long int),sizeof(char));
-	// Question 9
-	int a1 = 78;
-	float a2 = 90;
-	printf("This is 78/90:%lf \n",(double)a1/a2);
 	// Question 5
 	int a3 = 45;
 	int a4 = 87 , temp;
@@ -46,5 +40,13 @@ int main(void){
 	a3 = a4;
 	a4 = temp;
 	printf("These are the interchanged values:%d and %d\n",a3,a4);
+	// Question 7
+	printf("this is the greater no. from %d and %d:  %d\n",a3,a4,(a3>a4)?a3:a4);
+	// Question 8
+	printf(" Size of int is: %zu bytes\n Size of float is: %zu bytes \n Size of double is: %zu bytes\n Size of long int: %zu bytes\n Size of char: %zu bytes \n", sizeof(int),sizeof(float),sizeof(double),sizeof(long int),sizeof(char));
+	// Question 9
+	int a1 = 78;
+	float a2 = 90;
+	printf("This is 78/90:%lf \n",(double)a1/a2);
 	return 0;
 }		
